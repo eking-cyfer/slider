@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Carousel</title>
+    <style>
+        
+        body {
+            background-color: red;
+            font-family: Arial, sans-serif;
+            color:  white;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #4a90e2; 
+            text-transform: capitalize;
+            margin-top: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            overflow: hidden;
+            margin: 30px auto;
+            width: 900px; 
+            background-color: hsl(0, 75%, 49%); 
+        }
+
+        .myslides {
+            display: none;
+            max-height: 100%; 
+            max-width: 100%;
+            border-radius: 10px; 
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Places</h1>
+    
+<div>
+    <p>Birds are a group of warm-blooded vertebrates constituting the class Aves , characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton. Birds live worldwide and range in size from the 5.5 cm (2.2 in) bee hummingbird to the 2.8 m (9 ft 2 in) common ostrich. There are over 11,000 living species, more than half of which are passerine, or "perching" birds. Birds have wings whose development varies according to species; the only known groups without wings are the extinct moa and elephant birds. Wings, which are modified forelimbs, gave birds the ability to fly, although further evolution has led to the loss of flight in some birds, including ratites, penguins, and diverse endemic island species. The digestive and respiratory systems of birds are also uniquely adapted for flight. Some bird species of aquatic environments, particularly seabirds and some waterbirds, have further evolved for swimming. The study of birds is called ornithology.</p>
+</div>
+    <div class="carousel-container">
+        <img class="myslides" src="pic1.jpg" height="900" width="900" alt="Slide 1">
+        <img class="myslides" src="pic2.jpg" height="900" width="900" alt="Slide 2">
+        <img class="myslides" src="pic3.jpg" height="900" width="900" alt="Slide 3">
+        <img class="myslides" src="2222.jpg" height="900" width="900" alt="Slide 4">
+        <img class="myslides" src="1.jpg" height="900" width="900" alt="Slide 5">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
